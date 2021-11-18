@@ -26,6 +26,7 @@ class Dog extends Pet{
     }
 }
 
+
 class Cat extends Pet{
     Cat(String name,String breed,String color,int age){
         super(name, breed, color, age);

@@ -6,6 +6,7 @@ public class AnimalTester {
         Dog dog=new Dog();
         dog.name="lucky";
         dog.bark();
+        dog.sleep();
 
 
         Cat cat=new Cat();
