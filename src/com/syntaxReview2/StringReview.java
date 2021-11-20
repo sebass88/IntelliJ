@@ -56,6 +56,12 @@ public class StringReview {
         s=s.substring(0,4);
         System.out.println(s); // I am
 
+        String c="Hello i love java";
+        boolean var;
+        var=c.startsWith("hello");
+        System.out.println(var);
+
+
 
 
 
