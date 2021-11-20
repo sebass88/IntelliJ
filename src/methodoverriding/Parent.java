@@ -7,10 +7,12 @@ public class Parent {
         System.out.println("name is "+name);
     }
     void getmarried(){
+
         System.out.println("Ahmet will get married by my choice");
     }
 }
 class Child extends Parent{
+
     String name="Ahmet";
     void printName(){
         String name="Sharif";
@@ -18,7 +20,6 @@ class Child extends Parent{
         System.out.println(this.name);
         System.out.println(super.name);
     }
-
 
     @Override
     void getmarried(){
