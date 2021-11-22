@@ -14,7 +14,7 @@ public class Degree {
 class Masters extends Degree{
     @Override
     void getPrerequisite(){
-        System.out.println("i am going to get a good job with a masters degree");
+        System.out.println("To get a master's degree you need a Bachelor's degree");
     }
 
     public static void main(String[] args) {
