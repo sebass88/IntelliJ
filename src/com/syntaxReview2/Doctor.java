@@ -2,48 +2,53 @@ package com.syntaxReview2;
 
 public class Doctor {
 
-    String name;
-    String lastName;
-    String specialty;
-    double salary;
-//    static variable
-    static String hospital;
+        //instance variables
+        public String name;
+        public String lastName;
+        protected String speciality;
+        double salary;
+        private long ssn;
 
-     // CONSTRUCTOR
-    Doctor(String name,String lastName,String specialty,double salary){
-        this.name=name;
-        this.lastName=lastName;
-        this.specialty=specialty;
-        this.salary=salary;
+        //static variable
+        public static String hospital;
+
+        //constructor
+        public Doctor(String name, String lastName, String speciality, double salary){
+            this.name=name;
+            this.lastName=lastName;
+            this.speciality=speciality;
+            this.salary=salary;
+        }
+
+        //constructor
+        public Doctor(String name, String lastName, String speciality){
+            this.name=name;
+            this.lastName=lastName;
+            this.speciality=speciality;
+        }
+
+        protected void treatPatient(String name) {
+            System.out.println("Doctor"+this.name+"treats patient"+name);
+        }
+
+        public void printInfo() {
+            System.out.println(name +" "+lastName+ " is a "+speciality);
+        }
+
+        //instance methods can work with instance and static
+        void work() {
+            System.out.println(name +" works at hospital "+hospital);
+        }
+
+        private void getPaid() {
+            System.out.println(name+" gets paid "+salary);
+        }
+
+        //static can work only with static
+        static void companyName() {
+            System.out.println("All doctors work at "+hospital);
+        }
+
     }
-    //CONSTRUCTOR
-    Doctor(String name,String lastName,String specialty){
-        this.name=name;
-        this.lastName=lastName;
-        this.specialty=specialty;
 
-    }
 
-    void treatPatient(String name){
-        System.out.println("Doctor "+this.name+" treats patient "+name);
-    }
-
-    void printInfo(){
-        System.out.println(name+" "+lastName+" is a"+specialty);
-    }
-
-    void work(){
-        System.out.println(name+" works at hospital"+hospital);
-    }
-    void getpaid(){
-
-        System.out.println(name+" gets paid "+salary);
-    }
-
-    // Static can work only with static
-
-    static void companyName(){
-        System.out.println("all doctors work at"+hospital);
-    }
-
-}
