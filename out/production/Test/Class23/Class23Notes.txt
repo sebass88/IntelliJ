@@ -1,0 +1,6 @@
+Final Keyword - Is a keyword in java that we can use with classes fields and methods.
+It's Non Access Modifier.
+1) When used with classes those classes can not be inherited to prevent
+overuse of inheritance.
+2) When used with methods that method can not be overridden in child classes.
+3) When used with fields we can not change the value of that field.

@@ -27,7 +27,7 @@ class Apple extends Computer{
 
     @Override
     void operatingSystem() {
-        System.out.println("Apple uses IOS operating system");
+        System.out.println(model+ " uses MacOS operating system");
     }
 
     void cost(){
