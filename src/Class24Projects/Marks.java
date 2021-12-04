@@ -25,7 +25,7 @@ class StudentA extends Marks{
     }
     @Override
     public void getPercentage() {
-        System.out.println("the average for student A is "+mark1+mark2+mark3/3);
+        System.out.println("the average for student A is "+(mark1+mark2+mark3)/3);
     }
 }
 class StudentB extends Marks{
@@ -37,6 +37,6 @@ class StudentB extends Marks{
 
     @Override
     public void getPercentage() {
-        System.out.println("the average for student B is "+mark1+mark2+mark3+mark4/4);
+        System.out.println("the average for student B is "+(mark1+mark2+mark3+mark4)/4);
     }
 }

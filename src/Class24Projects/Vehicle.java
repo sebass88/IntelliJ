@@ -1,8 +1,8 @@
 package Class24Projects;
 
-public abstract class Car {
+public abstract class Vehicle {
 
-    //Create a Class Car that would have the following fields:
+    //Create a Class Vehicle that would have the following fields:
     // carPrice and color and method calculateSalePrice() which should be returning a price of the car.
     //Create 2 sub classes: Sedan and Truck.
     // The Truck class has field as weight and has its own implementation of  calculateSalePrice() method
@@ -12,16 +12,16 @@ public abstract class Car {
     // if length of sedan is >20 feet then returned car price should include 5% discount, otherwise 10% discount
 
     double carPrice;
-    String color;
+
 
     public abstract void calculateSalePrice();
 
-    Car(double carPrice){
+    Vehicle(double carPrice){
         this.carPrice=carPrice;
     }
 
 }
-class Truck extends Car{
+class Truck extends Vehicle {
 
     double weight;
     Truck(double carPrice,double weight){
@@ -40,7 +40,7 @@ class Truck extends Car{
 
     }
 }
-class Sedan extends Car{
+class Sedan extends Vehicle{
     double length;
     Sedan(double carPrice,double length){
         super(carPrice);
