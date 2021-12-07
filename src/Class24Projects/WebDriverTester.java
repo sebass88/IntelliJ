@@ -6,7 +6,7 @@ public class WebDriverTester {
         for (RemoteWebDriver remoteWebDriver : remoteWebDrivers) {
             remoteWebDriver.open();
             remoteWebDriver.close();
-            remoteWebDriver.getTitle();
+            System.out.println(remoteWebDriver.getTitle());
             remoteWebDriver.getScreenshot();
             remoteWebDriver.navigate();
         }

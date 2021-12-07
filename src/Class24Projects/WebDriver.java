@@ -16,12 +16,12 @@ interface RemoteWebDriver extends TakesScreenshot,WebDriver{
 class ChromeDriver implements RemoteWebDriver{
     @Override
     public void open() {
-        System.out.println("ChromeDriver opens");
+        System.out.println("opens chrome browser");
     }
 
     @Override
     public void close() {
-        System.out.println("ChromeDriver closes");
+        System.out.println("closes chrome browser");
     }
 
     @Override
@@ -42,12 +42,12 @@ class ChromeDriver implements RemoteWebDriver{
 class Firefox implements RemoteWebDriver{
     @Override
     public void open() {
-        System.out.println("Firefox opens");
+        System.out.println("Firefox opens browser");
     }
 
     @Override
     public void close() {
-        System.out.println("Firefox closes");
+        System.out.println("Firefox browser closes");
     }
 
     @Override
