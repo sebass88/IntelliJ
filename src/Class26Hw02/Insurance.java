@@ -13,7 +13,6 @@ public abstract class Insurance {
     Insurance(String insuranceName){
         this.insuranceName=insuranceName;
 
-
     }
     abstract void getQuote();
     abstract void cancelInsurance();

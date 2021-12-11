@@ -22,5 +22,13 @@ public class Task3 {
             }
         }
         System.out.println(Drinks);
+        System.out.println("-----------");
+
+        for(int j=0;j<Drinks.size();j++){
+            if(Drinks.get(j).toLowerCase().contains("e")||Drinks.get(j).toLowerCase().contains("a")){
+                Drinks.set(j,"water");
+            }
+        }
+        System.out.println(Drinks);
     }
 }
