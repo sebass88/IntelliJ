@@ -1,5 +1,6 @@
 package Class26Hw03;
 
+import java.util.Iterator;
 import java.util.TreeSet;
 
 public class countries {
@@ -21,7 +22,15 @@ public class countries {
 
         for(String tree:treeSet){
             System.out.println(tree);
+
         }
+        System.out.println("--------------------");
+
+        Iterator<String>iterator=treeSet.iterator();
+        while(iterator.hasNext()){
+            System.out.println(iterator.next());
+        }
+
 
 
     }

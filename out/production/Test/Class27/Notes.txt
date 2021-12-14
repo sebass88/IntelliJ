@@ -18,4 +18,13 @@ Properties of List:(ArrayList,LinkedList)
 2) We can insert the duplicate data as well
 
 Set
-They can't have duplicates
+They can't have duplicates values
+
+LinkHashSet
+no duplicates and maintains the order
+
+HashSet
+no duplicates its fast but No Order
+
+TreeHash Set
+no duplicates
