@@ -1,3 +1,40 @@
 Final Keyword:
 Final keyword is used to restrict the programmers.
-when we use it with variables we can't change their
+2)when we use it with variables we can't change their values once they are initialized
+3)we can override those variables for example i can have same name variable in the child
+    class without caring about the access/non-access modifiers
+4) If we want to initialize the static field we can also use static initializer blocks
+Final with Methods:
+if we use the final keyword with methods we can't override that method in the child class
+Final with class name:
+if we use the final keyword with class  name we can't inherit that class. But that class
+can inherit from other classes.
+==========================================================================================
+
+Abstraction:
+Abstraction in Java means hiding the implementation details and providing only the
+functionality to the user.
+We define the input/output of a method inside the parent class and make that class as Abstract
+then implementation is provided in the child classes.
+To Create the abstract class we use the abstract keyword  it's a non access modifier.
+Rules:
+  1) we can create a class as abstract even without having any abstract methods.
+  2) we can have static and non-static methods and fields inside the abstract class.
+  3) we can have constructors as well inside the abstract classes.
+  4) We can't have a class or method as final and abstract at the same time.  (Interview Question)
+  5) They must participate in inheritance and provide the implementation for the abstract methods.
+  6) If we don't want to provide the implementation to all the methods in the child class
+  we can declare that class as abstract class.
+  7) If we have even one single abstract method that class must be abstract (Interview Question)
+  8) We can't create the objects of abstract classes ,we must have a child class
+  that inherits from that class and provide the implementation for all the methods then
+  only we can create its object.
+===================================== = ===================================================================
+
+InterFace
+if 2 entities don't have parent child relationship we can create an interface
+for those entities.
+=============================================================
+Encapsulation:
+Encapsulation is using data (variables/fields) and code(methods) together as a single
+
