@@ -19,7 +19,7 @@ public class Person {
         this.age=age;
         this.salary=salary;
     }
-    public String printDetails(){
-        return name+" "+lastName+" "+age+" "+salary;
+    public void printDetails(){
+        System.out.println( name+" "+lastName+" "+age+" "+salary);
     }
 }

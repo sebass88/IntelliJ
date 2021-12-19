@@ -17,7 +17,7 @@ public class Task1 {
         countries.put("USA","Washington DC");
         countries.put("France","Paris");
         countries.put("England","London");
-        System.out.println(countries);
+        //System.out.println(countries);
         System.out.println("-------------");
 
         System.out.println("FOR EACH LOOP");
@@ -34,9 +34,8 @@ public class Task1 {
         System.out.println(countries);
         System.out.println("----ALL VALUES USING FOR EACH LOOP---------");
 
-        Set<Map.Entry<String,String>>entrySet1=countries.entrySet();
-        for(Map.Entry<String,String>entry:entrySet1){
-            System.out.println(entry.getValue());
+        for(String value:countries.values()){
+            System.out.println(value);
         }
         System.out.println("---ALL VALUES USING ITERATOR-----");
 
