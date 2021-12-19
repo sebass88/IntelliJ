@@ -15,7 +15,7 @@ public class Task1 {
         //password
         //Read file and extract values of browser & url
 
-        String path="files/Config.properties";
+        String path="files/Task.properties";
         Properties properties=new Properties();
         properties.put("browser","chrome");
         properties.put("url","https://facebook.com");
@@ -23,10 +23,12 @@ public class Task1 {
         properties.put("password","pass123!");
 
         FileOutputStream fileOutputStream=new FileOutputStream(path);
-        properties.store(fileOutputStream,"new file");
+        properties.store(fileOutputStream,"Task 1 Hw");
 
         System.out.println(properties.get("browser"));
         System.out.println(properties.get("url"));
+
+        fileOutputStream.close();
 
 
     }
