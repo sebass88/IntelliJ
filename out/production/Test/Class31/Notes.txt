@@ -1,0 +1,1 @@
+Exception is an event that disrupts the normal flow of program
