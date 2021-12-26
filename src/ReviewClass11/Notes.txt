@@ -1,0 +1,53 @@
+Collections Framework:
+Collection framework is a collection of interfaces and classes that help use store and
+manipulate data in an easy way. it has many built-in methods to manipulate the data.
+Why we should use collections framework :
+Variables can only store one value at time but what id we have to store multiple values
+for example the name of students in this class we will be needing a lot of variables
+To overcome this problem we can use arrays , They allow use store multiple values using a
+single variable. Data in arrays is stored based on indexes, but they don't have any methods
+to manipulate the data. They are fixed in size once we declared the array size we can't
+change it.
+
+Benefits of Arrays:
+1)They can store both primitive and non-primitive datatypes like : int and doubles,etc
+2) They occupy less space as compared to ArrayList
+3) They are fast
+4) ArraysList are also built using arrays.
+
+To overcome these shortcomings Java guys developed the collections framework
+It has many interfaces and classes which can make storing and manipulating data easy.
+They only work with wrapper classes. which occupy 4 times more memory in certain cases for
+example Integer(128bits) vs int 32 bits.
+============================================================
+
+Wrapper Classes:
+ They are object equivalent of primitive data types
+ for each primitive data type we have a wrapper object type.
+ we can use boxing and unboxing to convert the data between primitives and wrapper data types.
+ to make this conversion easy java guys made it automatic
+
+ int number=10;
+ Integer wrapperNumber=number;  == Autoboxing-- Recommend
+ wrapperNumber=new Integer(number);== Boxing-- Not recommend
+ number=wrapperNumber===AutoUnboxing
+ number=wrapperNumber
+ number=(int)wrapperNumber;==Unboxing
+ number=wrapperNumber.intvalue();==Unboxing
+ number=Integer.valueof(wrapperNumber);==Unboxing
+ ===========================================================================
+
+ List Interface:
+    1) Maintains the insertion order
+    2) Allows duplicates
+
+  Arraylist:
+    1) ArrayList are better if 90% of our operations involve reading the data
+    and 10% of the operations involve writing the data to the list
+    2) ArrayList is also better if most of the time we insert the data at the
+    end of the list.
+
+   LinkedList:
+    1) Better if we have to store data in the start or middle of the list we don't
+    need to perform shifting.
+    2) Slow when it comes to retrieval
