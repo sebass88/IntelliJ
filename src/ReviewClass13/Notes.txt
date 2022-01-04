@@ -1,0 +1,49 @@
+Exception Handling:
+It's an unwanted event that disrupts the normal flow of program. It happens at runtime.
+     If we specify wrong path we get a FileNotFoundException
+
+Why do we care about Exceptions:
+ 1).If we don't handle exceptions in our programs and get an issue at runtime complete application
+ will be terminated by JVM.
+ 2).IF we provide complex error messages to the users like Aysha  it will not make much
+ sense for them  that's why we should convert these error messages to something simple.
+ 3). We can get complete stack trace and can find the issue quickly by looking at that
+ stack trace.
+
+ Types of Issues:
+
+ (Error,Exceptions)
+ Exceptions (Checked/Unchecked)
+
+ Error:
+ Severe Issues that we should not try to handle because  we can't do much about these
+ issues for example Hardware failures JVM crashes.
+
+ Exceptions:
+    Are the issues that we should catch in our cod e and should provide the backup code.
+ Checked Exceptions are types of exceptions that are forced by compiler and we
+    should always provide a try catch block for these types of exceptions.
+    FOR EXAMPLE= IOE Exception, FileNotFoundException
+
+ Unchecked Exceptions are not forced by compiler and can be avoided by writing good code.
+    FOR EXAMPLE= NullPointerException, IndexOutOfBoundsExceptions ,etc.
+
+Keywords:
+
+1).try
+2).catch
+3).finally
+4).throw
+5).throws
+
+Try: Try with curly brackets is used to wrap the problematic code
+
+Catch: Catch withc curly brackets is used to provide backup code
+
+Finally: Finally block is used to write important cleanup code
+
+Throw: When we have to throw an exception we use throw keyword
+
+Throws: To indicate that a method can throw a specific exception
+
+Rules:

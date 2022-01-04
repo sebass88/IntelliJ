@@ -14,6 +14,6 @@ public class MapsDemo2 {
         linkedHashMap.put("Marina",16);
         System.out.println(linkedHashMap);
 
-      
+
     }
 }
